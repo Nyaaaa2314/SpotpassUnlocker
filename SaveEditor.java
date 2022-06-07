@@ -18,7 +18,6 @@ public class SaveEditor {
 		FileInputStream in = new FileInputStream(args[0]);
 		int c;
 		StringBuilder s = new StringBuilder();
-		boolean first = true;
 		while((c = in.read()) != -1) {
 			String temp = Integer.toHexString(c).toUpperCase();
 			if(temp.length() == 1) {
